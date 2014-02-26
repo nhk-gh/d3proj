@@ -1,0 +1,31 @@
+<div class='header'>
+  <ul class='nav nav-pills pull-right'>
+    <li class='active'><a ng-href='#'>Home</a></li>
+    <li><a ng-href='#'>About</a></li>
+    <li><a ng-href='#'>Contact</a></li>
+  </ul>
+  <h3 class='text-muted'>D3 project</h3>
+</div>
+
+<div class='panel work-table' ng-init="Init()">
+    <svg id='drawing' xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+         file-dropzone='[text/plain, application/pdf, image/png, image/jpeg, image/gif]'
+         data-max-file-size='30' file='image' file-name='imageFileName' file-upload>
+
+        <a ng-repeat='doc in docs' xlink:href="{{ doc.link }}" xlink:show="replace">
+            <rect draw-line ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y }}"
+                  ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h }}"
+                  style="fill:bisque; stroke:#acacac;" id="{{ $index }}"/>
+            <rect ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y  + top_zone }}"
+                  ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h - top_zone }}"
+                  style="fill:white; stroke:#acacac;"/>
+            <image ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y + top_zone }}"
+                   ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h - top_zone }}"
+                   xlink:href="images/book-icon.png" style="stroke:green"/>
+        </a>
+    </svg>
+</div>
+
+<div class='footer'>
+  <p>♥ from the TheKlub team</p>
+</div>
