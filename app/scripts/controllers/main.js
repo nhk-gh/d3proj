@@ -17,11 +17,13 @@ angular.module('d3projApp')
         doc.y = top;
         doc.w = width;
         doc.h = height;
-        doc.link = '#'+i;
+        doc.link = '#' + i;
+        doc.id = CryptoJS.MD5(Date.now().toString());
 
         $scope.docs.push(doc);
-        $scope.top_zone = 15;
       }
+
+      $scope.top_zone = 15;
 
       $scope.docs[0].tags = ['apple','peach','plum'];
       $scope.docs[1].tags = ['apple'];
@@ -38,10 +40,13 @@ angular.module('d3projApp')
       doc.h = height;
       doc.link = file.name;
       doc.tags = ['peach','plum'];
+      doc.id = CryptoJS.MD5(Date.now().toString());
 
       $scope.$apply(function(){
         $scope.docs.push(doc);
+        //$scope.redrawDocs();
       });
+
     };
 
     $scope.redrawDocs = function(){
@@ -57,6 +62,11 @@ angular.module('d3projApp')
           $scope.docs[i].y = top;
           $scope.docs[i].w = width;
           $scope.docs[i].h = height;
+/*
+          $scope.docs[i].x = $scope.workTableW - w_gap - width;
+          $scope.docs[i].y = $scope.top_zone *(i+1) + i*height;
+          $scope.docs[i].w = width;
+          $scope.docs[i].h = height; */
         }
       }
     };

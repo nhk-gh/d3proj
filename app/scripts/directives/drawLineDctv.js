@@ -8,15 +8,23 @@ angular.module('d3projApp')
       
       link: function (scope, element, attr) {
         var svg = d3.select('svg');
-       // $log.info(svg);
+        var lineGenerator = d3.svg.line()
+          .x(function(d) { return d[0]; })
+          .y(function(d) { return d[1]; });
+        var lineData = [[0,0],[300,300]];
+        var path;
+        // $log.info(svg);
 
         var cursor = element.css('cursor');
         //var draw = SVG('drawing');
         var draw = false;
+
         var canvas = angular.element('#drawing');
+        /*
         var ns = 'http://www.w3.org/2000/svg';
         scope.line = [];
         scope.tag = [];
+        */
         var rect1;
 
         element.on('mouseover', function(){
@@ -31,39 +39,13 @@ angular.module('d3projApp')
         element.on('mousedown', function(event) {
           var evtPoint = eventCoord(event);
 
-          for (var i=0; i<scope.line.length; i++) {
-            if (scope.line[i]) { scope.line[i].remove(); }
-          }
-          for (var j=0; j<scope.tag.length; j++) {
-            if (scope.tag[j]) { scope.tag[j].remove(); }
-          }
-
           rect1 = scope.$parent.$parent.docs[this.getAttribute('id')];
 
           var X = parseInt(attr.x) + parseInt(attr.width)/2;
-          var Y = parseInt(attr.y);
+          var Y = parseInt(attr.y) + scope.$parent.$parent.top_zone/2;
 
-          scope.line[0] = document.createElementNS(ns,'line');  // stick
-          scope.line[0].setAttribute('x1', X);
-          scope.line[0].setAttribute('y1', Y);
-          scope.line[0].setAttribute('x2', X);
-          scope.line[0].setAttribute('y2', Y-10);
-          scope.line[0].style.stroke = 'brown';
-
-          scope.line[1] = document.createElementNS(ns,'line');  // line
-          scope.line[1].setAttribute('x1', X);
-          scope.line[1].setAttribute('y1', Y-10);
-          scope.line[1].setAttribute('x2',evtPoint.x);
-          scope.line[1].setAttribute('y2',evtPoint.y);
-          scope.line[1].style.stroke = 'brown';
-
-          scope.line[2] = document.createElementNS(ns,'line');  // stick
-
-          canvas.append(scope.line);
-
-          scope.tag[0] = document.createElementNS(ns,'text');
-          scope.tag[1] = document.createElementNS(ns,'text');
-          canvas.append(scope.tag);
+          lineData = [[X,Y],[evtPoint.x,evtPoint.y]];
+          path = svg.append('path').datum(lineData).attr('d', lineGenerator).attr('stroke', 'red');
 
           draw = true;
         });
@@ -71,8 +53,10 @@ angular.module('d3projApp')
         canvas.on('mousemove', function(event){
           if (draw === true) {
             var evtPoint = eventCoord(event);
-            scope.line[1].setAttribute('x2', evtPoint.x);
-            scope.line[1].setAttribute('y2', evtPoint.y);
+
+            lineData[1][0] = evtPoint.x;
+            lineData[1][1] = evtPoint.y;
+            path.datum(lineData).attr('d', lineGenerator);
           }
         })
         .on('mouseup', function(event) {
@@ -86,23 +70,16 @@ angular.module('d3projApp')
 
             for (var i=0; i< rects.length; i++) {
               r = rects[i];
+              //$log.info(r.id + ' : ' + rect1.id);
 
               if (((evtPoint.x >= r.x) && (evtPoint.x <= (r.x+ r.w))) &&
                   ((evtPoint.y >= r.y) && (evtPoint.y <= (r.y+ r.h)))) {
                 // mouse up event inside the rect
 
-                if (!((parseInt(scope.line[0].getAttribute('x1')) === parseInt(r.x + r.w/2)) &&
-                    (parseInt(scope.line[0].getAttribute('y1')) === parseInt(r.y)))) {
-                  // but not inside the same rect
-
-                  scope.line[2].setAttribute('x1', r.x + r.w/2);
-                  scope.line[2].setAttribute('y1', r.y);
-                  scope.line[2].setAttribute('x2', r.x + r.w/2);
-                  scope.line[2].setAttribute('y2', r.y-10);
-                  scope.line[2].style.stroke = 'brown';
-
-                  scope.line[1].setAttribute('x2', r.x + r.w/2);
-                  scope.line[1].setAttribute('y2', r.y-10);
+                /*if (!((parseInt(scope.line[0].getAttribute('x1')) === parseInt(r.x + r.w/2)) &&
+                    (parseInt(scope.line[0].getAttribute('y1')) === parseInt(r.y)))) {*/
+                if (r.id !== rect1.id) {
+                  //but NOT inside the same rect
 
                   // check for common tags
                   var commonTags = rect1.tags.filter(function(tag){
@@ -110,7 +87,7 @@ angular.module('d3projApp')
                   });
 
                   if (commonTags.length > 0) {
-                    scope.tag[0].setAttribute('x', parseInt(scope.line[0].getAttribute('x1')));
+                    /*scope.tag[0].setAttribute('x', parseInt(scope.line[0].getAttribute('x1')));
                     scope.tag[0].setAttribute('y', parseInt(scope.line[0].getAttribute('y1'))-20);
                     scope.tag[0].setAttribute('style', "font-size:10; stroke:#acacac");
                     scope.tag[0].textContent = commonTags.join(',');
@@ -118,7 +95,16 @@ angular.module('d3projApp')
                     scope.tag[1].setAttribute('x', r.x + r.w/2);
                     scope.tag[1].setAttribute('y', r.y-20);
                     scope.tag[1].setAttribute('style', "font-size:10; stroke:#acacac");
-                    scope.tag[1].textContent = commonTags.join(',');
+                    scope.tag[1].textContent = commonTags.join(',');    */
+                    svg.append('text').text(commonTags.join(','))
+                      .attr({
+                        x: r.x + r.w/2,
+                        y: r.y-20
+                      })
+                      .style({
+                        'font-size': '10px',
+                        'font-family': 'arial'
+                      })
                   }
 
                   toRemove = false;
@@ -128,12 +114,9 @@ angular.module('d3projApp')
             }
 
             if (toRemove) {
-              for (var j=0; j<scope.line.length; j++) {
-                if (scope.line[j]) { scope.line[j].remove(); }
-              }
-              for (var k=0; k<scope.tag.length; k++) {
-                if (scope.tag[k]) { scope.tag[k].remove(); }
-              }
+              // mouse up event inside the same rect or on the work table
+              path.remove();
+
             }
           }
         });

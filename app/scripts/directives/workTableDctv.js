@@ -20,6 +20,7 @@ angular.module('d3projApp')
           docIconSize.width = docIconSize.width * newVal / oldVal;
           docIconSize.height = docIconSize.width * 1.2;
 
+          //scope.workTableW = newVal;
           scope.redrawDocs();
         });
       }

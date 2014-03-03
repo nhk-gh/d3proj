@@ -52,7 +52,6 @@ angular.module('d3projApp')
           if (event != null) {
             event.preventDefault();
           }
-          $log.info(event);
 
           reader = new FileReader();
           reader.onload = function(evt) {
