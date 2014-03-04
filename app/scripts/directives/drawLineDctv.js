@@ -38,14 +38,15 @@ angular.module('d3projApp')
 
         element.on('mousedown', function(event) {
           var evtPoint = eventCoord(event);
-
-          rect1 = scope.$parent.$parent.docs[this.getAttribute('id')];
+          //rect1 = scope.$parent.$parent.docs[this.getAttribute('id')];
+          rect1 = angular.element('#main-doc');
 
           var X = parseInt(attr.x) + parseInt(attr.width)/2;
-          var Y = parseInt(attr.y) + scope.$parent.$parent.top_zone/2;
+          var Y = parseInt(attr.y);
 
           lineData = [[X,Y],[evtPoint.x,evtPoint.y]];
           path = svg.append('path').datum(lineData).attr('d', lineGenerator).attr('stroke', 'red');
+          $log.info(path);
 
           draw = true;
         });
@@ -116,7 +117,6 @@ angular.module('d3projApp')
             if (toRemove) {
               // mouse up event inside the same rect or on the work table
               path.remove();
-
             }
           }
         });
@@ -146,6 +146,8 @@ angular.module('d3projApp')
           // Do something with this information   */
           return {x: event.offsetX, y: event.offsetY};
         };
+
+
       }
     };
   });

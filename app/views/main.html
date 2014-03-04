@@ -1,8 +1,8 @@
 <div class='header'>
   <ul class='nav nav-pills pull-right'>
-    <li class='active'><a ng-href='#'>Home</a></li>
-    <li><a ng-href='#'>About</a></li>
-    <li><a ng-href='#'>Contact</a></li>
+    <!--li class='active'><a ng-href='#'>Home</a></li>
+    <li><a ng-href='#'>About</a></li-->
+    <li><a class='btn btn-' ng-click="connectDocs()">Connect</a></li>
   </ul>
   <h3 class='text-muted'>D3 project</h3>
 </div>
@@ -12,23 +12,45 @@
          file-dropzone='[text/plain, application/pdf, image/png, image/jpeg, image/gif]'
          data-max-file-size='30' file='image' file-name='imageFileName' file-upload>
 
-        <a ng-repeat='doc in docs' xlink:href="{{ doc.link }}" xlink:show="replace">
-            <rect draw-line ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y }}"
-                  ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h }}"
-                  style="fill:bisque; stroke:#acacac;" id="{{ $index }}"/>
-            <rect ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y  + top_zone }}"
-                  ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h - top_zone }}"
-                  style="fill:white; stroke:#acacac;"/>
-            <image ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y + top_zone }}"
-                   ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h - top_zone }}"
-                   xlink:href="images/book-icon.png" />
-        </a>
-        <!--a xlink:href="#" xlink:show="replace">
-            <rect draw-line id='main-doc' x="50" y="50" width="100" height="120" style="fill:bisque; stroke:#acacac;" />
-            <rect x="50" y="65" width="100" height="105" style="fill:white; stroke:#acacac;"/>
-            <image x="50" y="65" width="100" height="105" xlink:href="images/yeoman.png" /-->
-        </a>
+        <g ng-repeat='doc in docs' ng-click='setMainDoc($index)' id="g{{ $index }}">
+            <a  xlink:href="" xlink:show="none">
+                <rect ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y }}"
+                      ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h }}"
+                      style="fill:bisque; stroke:#acacac;"/>
+                <rect ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y  + top_zone }}"
+                      ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h - top_zone }}"
+                      style="fill:white; stroke:#acacac;"/>
+                <image ng-attr-x="{{ doc.x }}" ng-attr-y="{{ doc.y + top_zone }}"
+                       ng-attr-width="{{ doc.w }}" ng-attr-height="{{ doc.h - top_zone }}"
+                       xlink:href="images/book-icon.png" />
+            </a>
+        </g>
+
+        <g id="main-doc">
+            <a >
+                <rect draw-line ng-attr-x="{{ mainDoc.x }}" ng-attr-y="{{ mainDoc.y }}"
+                      ng-attr-width="{{ mainDoc.w }}" ng-attr-height="{{ mainDoc.h }}"
+                      style="fill:bisque; stroke:#acacac;"/>
+                <rect ng-attr-x="{{ mainDoc.x }}" ng-attr-y="{{ mainDoc.y  + top_zone }}"
+                      ng-attr-width="{{ mainDoc.w }}" ng-attr-height="{{ mainDoc.h - top_zone }}"
+                      style="fill:white; stroke:#acacac;"/>
+                <image ng-attr-x="{{ mainDoc.x }}" ng-attr-y="{{ mainDoc.y + top_zone }}"
+                       ng-attr-width="{{ mainDoc.w }}" ng-attr-height="{{ mainDoc.h - top_zone }}"
+                       xlink:href="images/yeoman.png" />
+            </a>
+        </g>
+        <!--path class='path-hover' stroke='red' d="M 300 50 L 200 150 z"/-->
+
     </svg>
+
+    <div id="path-prop" class="table-responsive hidden">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <td> 1 </td>
+                <td> 2 </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <div class='footer'>

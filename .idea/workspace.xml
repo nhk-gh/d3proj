@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="2109" selection-end="2109" vertical-scroll-proportion="-24.958334" vertical-offset="106" max-vertical-offset="1290">
+            <state line="18" column="26" selection-start="782" selection-end="782" vertical-scroll-proportion="-0.0" vertical-offset="270" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
@@ -35,29 +35,20 @@
       <file leaf-file-name="drawLineDctv.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/directives/drawLineDctv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="10" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1710">
-              <folding>
-                <element signature="e#2815#3822#0" expanded="false" />
-                <element signature="e#4147#4907#0" expanded="false" />
-              </folding>
+            <state line="50" column="28" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="2385">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workTableDctv.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="workTableDctv.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/directives/workTableDctv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="46" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileUploadDctv.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/fileUploadDctv.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="3015">
-              <folding />
+            <state line="64" column="8" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.5601852" vertical-offset="597" max-vertical-offset="1890">
+              <folding>
+                <element signature="e#3268#3547#0" expanded="false" />
+                <element signature="e#3875#4742#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,16 +56,16 @@
       <file leaf-file-name="fileDndDctv.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/directives/fileDndDctv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="35" selection-start="805" selection-end="805" vertical-scroll-proportion="-1.1538461" vertical-offset="315" max-vertical-offset="1425">
+            <state line="23" column="35" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="38" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.7156398" vertical-offset="267" max-vertical-offset="1185">
+            <state line="55" column="39" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1455">
               <folding />
             </state>
           </provider>
@@ -83,8 +74,13 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="115" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="630">
-              <folding />
+            <state line="42" column="20" selection-start="2327" selection-end="2327" vertical-scroll-proportion="-17.875" vertical-offset="201" max-vertical-offset="960">
+              <folding>
+                <element signature="n#style#0;n#rect#0;n#a#0;n#g#0;n#svg#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#rect#1;n#a#0;n#g#0;n#svg#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#rect#0;n#a#0;n#g#1;n#svg#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#rect#1;n#a#0;n#g#1;n#svg#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,19 +101,20 @@
         <option value="$PROJECT_DIR$/app/scripts/directives/FileUploadDctv.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/FileDndDctv.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/docIconSize.js" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/directives/fileDndDctv.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/drawLineDctv.js" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/workTableDctv.js" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/workTableDctv.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="57" />
+    <option name="x" value="65" />
+    <option name="y" value="52" />
     <option name="width" value="1166" />
     <option name="height" value="991" />
   </component>
@@ -230,7 +227,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,11 +245,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".tmp" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,14 +311,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="57" width="1166" height="991" extended-state="0" />
+    <frame x="65" y="52" width="1166" height="991" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19425288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19381689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22962314" sideWeight="0.80574715" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22914837" sideWeight="0.8061831" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -342,15 +343,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="56" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="375">
-          <folding />
-        </state>
+        <state line="7" column="56" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
@@ -365,91 +364,92 @@
         <state line="116" column="51" selection-start="3501" selection-end="3501" vertical-scroll-proportion="0.3853211" vertical-offset="1530" max-vertical-offset="2400" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6135" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/ui-bootstrap-tpls-0.9.0.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="43" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.115384616" vertical-offset="0" max-vertical-offset="54075" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="375" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/fileUploadDctv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3015">
+        <state line="15" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3015" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/jquery/speed/jquery-basis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1374408" vertical-offset="720" max-vertical-offset="93660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="80" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="6150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/drawLineDctv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="28" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="2385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/docIconSizeSrvc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="53" selection-end="64" vertical-scroll-proportion="0.06965944" vertical-offset="0" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.tmp/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12876" column="10" selection-start="250706" selection-end="250715" vertical-scroll-proportion="0.33278418" vertical-offset="192938" max-vertical-offset="300480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="91" selection-start="851" selection-end="851" vertical-scroll-proportion="0.20418006" vertical-offset="563" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/drawLineDctv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="10" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1710">
-          <folding>
-            <element signature="e#2815#3822#0" expanded="false" />
-            <element signature="e#4147#4907#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/workTableDctv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="2109" selection-end="2109" vertical-scroll-proportion="-24.958334" vertical-offset="106" max-vertical-offset="1290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="115" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="630">
+        <state line="8" column="14" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/fileDndDctv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="35" selection-start="805" selection-end="805" vertical-scroll-proportion="-1.1538461" vertical-offset="315" max-vertical-offset="1425">
+        <state line="23" column="35" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.7156398" vertical-offset="267" max-vertical-offset="1185">
+        <state line="55" column="39" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1455">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="87" selection-start="656" selection-end="656" vertical-scroll-proportion="0.14285715" vertical-offset="413" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="20" selection-start="2327" selection-end="2327" vertical-scroll-proportion="-17.875" vertical-offset="201" max-vertical-offset="960">
+          <folding>
+            <element signature="n#style#0;n#rect#0;n#a#0;n#g#0;n#svg#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#rect#1;n#a#0;n#g#0;n#svg#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#rect#0;n#a#0;n#g#1;n#svg#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#rect#1;n#a#0;n#g#1;n#svg#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/workTableDctv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="8" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.5601852" vertical-offset="597" max-vertical-offset="1890">
+          <folding>
+            <element signature="e#3268#3547#0" expanded="false" />
+            <element signature="e#3875#4742#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
